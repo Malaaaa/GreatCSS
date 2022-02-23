@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html xmlns=>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> two colimn</title>
+<style>
+    .box{
+         overflow: hidden; /* BFC */
+    }
+    .left {
+        float: left;
+        width: 200px;
+        background-color: gray;
+        height: 400px;
+    }
+    .right {
+        margin-left: 210px;
+        background-color: lightgray;
+        height: 400px;
+    }
+</style>
+</head>
+<div class="box">
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+
+<style>
+    .box2{
+        display: flex;
+    }
+    .left2 {
+        width: 100px;
+    }
+    .right2 {
+        flex: 1;
+    }
+</style>
+<div class="box2">
+    <div class="left2">left</div>
+    <div class="right2">right</div>
+</div>

@@ -1,0 +1,139 @@
+<style>
+    .wrap {
+        background: #eee;
+         overflow: hidden; /* BFC  */
+        padding: 20px;
+        height: 200px;
+    }
+    .left {
+        width: 200px;
+        height: 200px;
+        float: left;
+        background: coral;
+    }
+    .right {
+        width: 120px;
+        height: 200px;
+        float: right;
+        background: lightblue;
+    }
+    .middle {
+        margin-left: 220px;
+        height: 200px;
+        background: lightpink;
+        margin-right: 140px;
+    }
+</style>
+<div class="wrap">
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <div class="middle">middle</div>
+</div>
+<style>
+    .container2 {
+      position: relative;
+    }
+
+    .left2,
+    .right2,
+    .main2 {
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+
+    .left2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      background: green;
+    }
+
+    .right2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      background: green;
+    }
+
+    .main2 {
+      margin: 0 110px;
+      background: black;
+      color: white;
+    }
+  </style>
+
+  <div class="container2">
+    <div class="left2">left fixed</div>
+    <div class="right2">right fixed</div>
+    <div class="main2">middle flex</div>
+  </div>
+
+
+  <style type="text/css">
+    .wrap3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left3,
+    .right3,
+    .middle3 {
+        height: 100px;
+    }
+
+    .left3 {
+        width: 200px;
+        background: coral;
+    }
+
+    .right3 {
+        width: 120px;
+        background: lightblue;
+    }
+
+    .middle3 {
+        background: #555;
+        width: 100%;
+        margin: 0 20px;
+    }
+</style>
+<div class="wrap3">
+    <div class="left3">left3</div>
+    <div class="middle3">middle3</div>
+    <div class="right3">right3</div>
+</div>
+
+<style>
+  .wrap4 {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 300px auto 300px;
+  }
+
+  .left4,
+  .right4,
+  .middle4 {
+      height: 100px;
+  }
+
+  .left4 {
+      background: coral;
+  }
+
+  .right4 {
+      width: 300px;
+      background: lightblue;
+  }
+
+  .middle4 {
+      background: #555;
+  }
+</style>
+<div class="wrap4">
+  <div class="left4">left4</div>
+  <div class="middle4">middle4</div>
+  <div class="right4">right4</div>
+</div>
