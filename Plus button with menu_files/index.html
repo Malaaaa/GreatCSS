@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://cdpn.io/cpe/boomboom/index.html?editors=1111&key=index.html-80124e0b-2af2-e201-9624-26e12c41f0de# -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <title>CodePen Demo</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/malaaa/pen/BaJNVLE?editors=1111">
+
+  
+  
+<link rel="stylesheet" href="./normalize.min.css">
+
+  <style class="INLINE_PEN_STYLESHEET_ID">
+    body {
+  margin: 1em;
+}
+
+.plus-button {
+  display: inline-block;
+  position: relative;
+}
+.plus-button.is-active .menu {
+  display: block;
+}
+.plus-button.is-active .button {
+  transform: rotate(45deg);
+  transition-delay: 0;
+}
+.plus-button.is-active .arrow {
+  transition-delay: 0.15s;
+}
+.plus-button.is-active .arrow-left {
+  transform: translate(1.9rem, -1.9rem);
+  fill: #0d2c54;
+}
+.plus-button.is-active .arrow-right {
+  transform: translate(-0.15rem, 0.15rem);
+}
+.plus-button:not(.is-active) .button {
+  transition-delay: 0.15s;
+}
+.plus-button:not(.is-active) .arrow {
+  transition-delay: 0;
+}
+
+.button {
+  display: inline-block;
+  transform: rotate(0);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background: #0d2c54;
+  position: relative;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+.button:hover {
+  transform: scale(1.15);
+}
+
+.arrow {
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: -0.6rem;
+  margin-left: -0.6rem;
+  transition-property: transform, fill;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+
+.menu {
+  z-index: 999;
+  color: #0d2c54;
+  background: rgba(13, 44, 84, 0.1);
+  min-width: 20rem;
+  padding: 0.8rem;
+  position: absolute;
+  display: grid;
+  border-radius: 0.8em;
+  grid-gap: 0.5em;
+  top: 0;
+  left: 5.5rem;
+  box-shadow: 0 0.18em 0.37em rgba(13, 44, 84, 0.16), 0 0.18em 0.37em rgba(13, 44, 84, 0.23);
+  opacity: 0;
+  display: none;
+  -webkit-animation: fade-in 0.25s ease-in-out 0.15s forwards;
+          animation: fade-in 0.25s ease-in-out 0.15s forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    left: 4.5rem;
+  }
+  to {
+    opacity: 1;
+    left: 5.5rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    left: 4.5rem;
+  }
+  to {
+    opacity: 1;
+    left: 5.5rem;
+  }
+}
+  </style>
+
+  
+<script src="./iframeConsoleRunner-d0f3648046d2aaca07bd0037b9e061a26c74a8a999b75672ad6a638cca641472.js.download"></script>
+<script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+<script src="./iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js.download"></script>
+</head>
+
+<body class="vsc-initialized">
+  <div class="plus-button">
+  <a href="https://cdpn.io/cpe/boomboom/index.html?editors=1111&amp;key=index.html-80124e0b-2af2-e201-9624-26e12c41f0de#" class="button">
+    <svg class="arrow arrow-left" viewBox="0 0 448 448">
+      <path d="M272 176H32c-18 0-32 14-32 32v32c0 18 14 32 32 32h144v144c0 18 14 32 32 32h32c18 0 32-14 32-32V176z"></path>
+    </svg>
+    <svg class="arrow arrow-right" viewBox="0 0 448 448">
+      <path d="M176 272h240c18 0 32-14 32-32v-32c0-18-14-32-32-32H272V32c0-18-14-32-32-32h-32c-18 0-32 14-32 32v240z"></path>
+    </svg>
+  </a>
+  <div class="menu">Menu content</div>
+</div>
+  
+<script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+  <script src="./pen.js.download" crossorigin=""></script>
+
+
+</body></html>
